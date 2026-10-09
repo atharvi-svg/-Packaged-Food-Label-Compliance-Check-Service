@@ -1,0 +1,75 @@
+{
+  "notice": "Entirely fictional mock passages for software development; not legal guidance and not FSSAI requirements.",
+  "sources": [
+    {
+      "source_id": "MOCK-LABELING",
+      "source_type": "labeling",
+      "name": "Fictional Mock Labeling Source",
+      "clauses": [
+        {
+          "clause_id": "MOCK-001",
+          "title": "Mock statement-of-identity passage",
+          "text": "Fictional mock passage: a statement of identity is supplied.",
+          "keywords": ["statement of identity"],
+          "supports_rule_ids": ["MOCK-001"],
+          "claim_keywords": []
+        },
+        {
+          "clause_id": "MOCK-002",
+          "title": "Mock net-quantity passage",
+          "text": "Fictional mock passage: net quantity is supplied.",
+          "keywords": ["net quantity"],
+          "supports_rule_ids": ["MOCK-002"],
+          "claim_keywords": []
+        },
+        {
+          "clause_id": "MOCK-003",
+          "title": "Mock ingredients passage",
+          "text": "Fictional mock passage: ingredients are supplied.",
+          "keywords": ["ingredients"],
+          "supports_rule_ids": ["MOCK-003"],
+          "claim_keywords": []
+        },
+        {
+          "clause_id": "MOCK-004",
+          "title": "Mock allergen-declaration passage",
+          "text": "Fictional mock passage: an allergen declaration is supplied.",
+          "keywords": ["allergen declaration"],
+          "supports_rule_ids": ["MOCK-004"],
+          "claim_keywords": []
+        },
+        {
+          "clause_id": "MOCK-005",
+          "title": "Mock responsible-party passage",
+          "text": "Fictional mock passage: responsible-party information is supplied.",
+          "keywords": ["responsible party"],
+          "supports_rule_ids": ["MOCK-005"],
+          "claim_keywords": []
+        },
+        {
+          "clause_id": "MOCK-CLAIM-001",
+          "title": "Mock protein-claim search pointer",
+          "text": "Fictional mock passage: the wording source of protein is recorded for separate review; this passage does not determine claim compliance.",
+          "keywords": ["source of protein", "protein claim"],
+          "supports_rule_ids": [],
+          "claim_keywords": ["source of protein", "protein"]
+        }
+      ]
+    },
+    {
+      "source_id": "MOCK-CLAIMS",
+      "source_type": "claims",
+      "name": "Fictional Mock Claims Source",
+      "clauses": [
+        {
+          "clause_id": "CLAIM-001",
+          "title": "Mock claim-scope passage",
+          "text": "Fictional mock passage: the wording source of protein is a product-claim trigger for separate review; this passage is not an official rule and does not determine compliance.",
+          "keywords": ["product claim", "source of protein", "separate review"],
+          "supports_rule_ids": [],
+          "claim_keywords": ["high protein", "source of protein", "protein"]
+        }
+      ]
+    }
+  ]
+}
