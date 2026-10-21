@@ -1,0 +1,129 @@
+{
+  "tool": "Packaged Food Label Compliance Screening Prototype",
+  "overall_status": "Manual review required",
+  "disclaimer": "This prototype detects text patterns and retrieves regulatory passages. It does not establish legal compliance or verify that every applicable requirement has been met. Applicability depends on the product, label format, relevant regulations, exceptions and amendments. Verify current official requirements and inspect the original package before making a decision.",
+  "summary": {
+    "text_checks_total": 9,
+    "text_checks_detected": 9,
+    "text_checks_not_detected": 0,
+    "claims_detected": 2
+  },
+  "findings": [
+    {
+      "check_id": "name_of_food",
+      "item": "Name of food",
+      "status": "Text detected",
+      "detected": true,
+      "note": "Text presence does not establish that the declaration or claim is legally correct or sufficient."
+    },
+    {
+      "check_id": "ingredients",
+      "item": "Ingredients list",
+      "status": "Text detected",
+      "detected": true,
+      "note": "Text presence does not establish that the declaration or claim is legally correct or sufficient."
+    },
+    {
+      "check_id": "nutrition_information",
+      "item": "Nutrition information",
+      "status": "Text detected",
+      "detected": true,
+      "note": "Text presence does not establish that the declaration or claim is legally correct or sufficient."
+    },
+    {
+      "check_id": "net_quantity",
+      "item": "Net quantity",
+      "status": "Text detected",
+      "detected": true,
+      "note": "Text presence does not establish that the declaration or claim is legally correct or sufficient."
+    },
+    {
+      "check_id": "date_marking",
+      "item": "Date marking",
+      "status": "Text detected",
+      "detected": true,
+      "note": "Text presence does not establish that the declaration or claim is legally correct or sufficient."
+    },
+    {
+      "check_id": "manufacturer_details",
+      "item": "Manufacturer or packer details",
+      "status": "Text detected",
+      "detected": true,
+      "note": "Text presence does not establish that the declaration or claim is legally correct or sufficient."
+    },
+    {
+      "check_id": "fssai_license",
+      "item": "FSSAI licence identifier",
+      "status": "Text detected",
+      "detected": true,
+      "note": "Text presence does not establish that the declaration or claim is legally correct or sufficient."
+    },
+    {
+      "check_id": "high_protein_claim",
+      "item": "High-protein claim",
+      "status": "Text detected",
+      "detected": true,
+      "note": "Text presence does not establish that the declaration or claim is legally correct or sufficient."
+    },
+    {
+      "check_id": "sugar_free_claim",
+      "item": "Sugar-free claim",
+      "status": "Text detected",
+      "detected": true,
+      "note": "Text presence does not establish that the declaration or claim is legally correct or sufficient."
+    }
+  ],
+  "general_labelling_references": [
+    {
+      "citation": "Original Labelling Regulations.pdf, page 39",
+      "source": "Original Labelling Regulations.pdf",
+      "page": 39,
+      "excerpt": "(c) FSSAI Logo and License number; (d) Date marking; (e) Lot No. (f) Name and address of the manufacturer or packer (including country of origin for imported packages) (2) The following information if not provided on the label shall be provided in the accompanying documents: (a) List of ingredient (b) Declaration regarding Veg or Non-Veg (c)Nutritional information (3) The following labelling requirements are exempted if they are provided in a Barcode/Global Trade Identification Number (GTIN);-"
+    },
+    {
+      "citation": "Labelling amendment 5.pdf, page 6",
+      "source": "Labelling amendment 5.pdf",
+      "page": 6,
+      "excerpt": "6 THE GAZETTE OF INDIA : EXTRAORDINARY [PART III—SEC.4] (a) Name of the food; (b) FSSAI Logo and License number; (c) Date marking and storage instructions, when required for the safety or integrity of the product; (d) Lot number or Batch number or Code number; and (e) Name and address of the manufacturer or packer (including country of origin for imported packages) Provided that in case of non -retail container containing multiple types of food, the mandatory information shall be provided for all the types of foods contained therein:"
+    },
+    {
+      "citation": "Original Labelling Regulations.pdf, page 35",
+      "source": "Original Labelling Regulations.pdf",
+      "page": 35,
+      "excerpt": "in India. (7)FSSAI logo and license number.- (a) The FSSAI logo and license number under the Act shall be displayed on the label of the food package in contrast color to the background as below: Lic. No. XXXXXXXXXXXXXX (b) The FSSAI logo and license number of the brand owner shall be displayed on the label. In addition, the license number of the manufacturer or marketer or packer or bottler, as the case may be, if different from the brand owner, shall also be displayed on the label."
+    }
+  ],
+  "claim_reviews": [
+    {
+      "check_id": "high_protein_claim",
+      "claim": "High-protein claim",
+      "status": "Detected - criteria review required",
+      "detected": true,
+      "retrieval_query": "Food Advertising and Claims Regulations, protein nutrient content claim, source of protein, rich or high protein, recommended dietary allowance RDA criteria and conditions",
+      "review_note": "Review the retrieved provisions and verify the current applicable regulations, product category, required nutrient values and conditions before deciding whether the claim is permitted.",
+      "regulatory_references": [
+        {
+          "citation": "Original Advertising and Claims Regulations.pdf, page 28",
+          "source": "Original Advertising and Claims Regulations.pdf",
+          "page": 28,
+          "excerpt": "11. Protein Source* 10% of RDA per 100 g for solids 5% of RDA per 100 ml for liquids or 5% of RDA per 100 kcal Rich / High * 20% of RDA per 100 g for solids"
+        },
+        {
+          "citation": "Advertising and Claims amendment 3.pdf, page 12",
+          "source": "Advertising and Claims amendment 3.pdf",
+          "page": 12,
+          "excerpt": "10 per cent. of Recommended Dietary Allowance per 100 g for solids 5 per cent. of Recommended Dietary Allowance per 100 ml for liquids, or 5 per cent. of Recommended Dietary Allowance per 100 kcal, or 10 per cent. of Recommended Dietary Allowance per serving Rich / High 20 per cent. of Recommended Dietary Allowance per 100 g for solids 10 per cent. of Recommended Dietary Allowance per 100 ml for liquids, or 10 per cent. of Recommended Dietary Allowance per 100 kcal, or 20 per cent. of Recommended Dietary Allowance per serving 12. Vitamin(s) or Mineral(s)"
+        }
+      ]
+    },
+    {
+      "check_id": "sugar_free_claim",
+      "claim": "Sugar-free claim",
+      "status": "Detected - criteria review required",
+      "detected": true,
+      "retrieval_query": "Food Advertising and Claims Regulations, sugars free claim, maximum permitted sugars per 100 g solid food or per 100 ml liquid food, applicable conditions and amendments",
+      "review_note": "Review the retrieved provisions and verify the current applicable regulations, product category, required nutrient values and conditions before deciding whether the claim is permitted.",
+      "regulatory_references": []
+    }
+  ]
+}

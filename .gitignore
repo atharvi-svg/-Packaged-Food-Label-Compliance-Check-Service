@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+.env
+*.save
+
+data/raw/*.pdf
+data/processed/index/
+data/processed/*.json
+!data/processed/manifest.json

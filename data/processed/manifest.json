@@ -1,0 +1,21 @@
+{
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "pdf_count": 12,
+  "page_count_with_text": 420,
+  "chunk_count": 2397,
+  "sources": [
+    "Advertising and Claims amendment 1.pdf",
+    "Advertising and Claims amendment 2.pdf",
+    "Advertising and Claims amendment 3.pdf",
+    "Health_Supplements_Compendium_2021.pdf",
+    "Labelling amendment 1.pdf",
+    "Labelling amendment 2.pdf",
+    "Labelling amendment 3.pdf",
+    "Labelling amendment 4.pdf",
+    "Labelling amendment 5.pdf",
+    "Nutraceuticals_Regulations.pdf",
+    "Original Advertising and Claims Regulations.pdf",
+    "Original Labelling Regulations.pdf"
+  ],
+  "warning": "Verify consolidated versions and amendments; extracted heading_candidate is not a verified clause citation."
+}
