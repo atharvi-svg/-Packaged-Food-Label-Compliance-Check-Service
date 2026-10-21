@@ -1,0 +1,19 @@
+{
+  "statement_of_identity": "Example Protein Oat Bites",
+  "net_quantity": "250 g",
+  "ingredients": [
+    "rolled oats",
+    "milk",
+    "honey"
+  ],
+  "responsible_party": "Example Foods, Anytown",
+  "nutrition": {
+    "protein": "10 g per 100 g"
+  },
+  "claims": [
+    {
+      "id": "CLAIM-SOURCE-OF-PROTEIN",
+      "text": "source of protein"
+    }
+  ]
+}

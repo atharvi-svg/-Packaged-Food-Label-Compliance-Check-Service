@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "food-label-compliance"
+version = "0.1.0"
+description = "A mock LangGraph food label compliance workflow."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["langgraph>=1.0,<2.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

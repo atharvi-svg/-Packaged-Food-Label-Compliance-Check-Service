@@ -1,50 +1,52 @@
-# Packaged Food Label Compliance Screening Prototype
+# Packaged Food Label Compliance Check Service
 
 ## Overview
 
-A Python-based prototype that screens packaged food label text for selected label declarations and nutrition claims. It retrieves relevant regulatory passages from a local FAISS index to support manual review.
+This repository combines a packaged food label screening prototype with a deterministic, evidence-verification workflow. It is intended to support preliminary screening and manual regulatory review, not to certify legal compliance.
 
-## Features
+The repository contains two components:
 
-* Detects nine categories of label text signals.
-* Screens for high-protein and sugar-free claims.
-* Retrieves regulatory passages from ingested PDF documents.
-* Displays screening results in a Streamlit web interface.
-* Exports the screening report as JSON.
+### Person 1 — Label Screening Prototype
+
+A Python-based application that screens packaged food label text for selected declarations and nutrition claims.
+
+Features:
+- Detects nine categories of label text signals.
+- Screens for high-protein and sugar-free claims.
+- Retrieves relevant regulatory passages from a local FAISS index.
+- Provides a Streamlit web interface.
+- Exports screening reports as JSON.
+
+Key files:
+- `app.py` — Streamlit interface
+- `src/ingest.py` — document ingestion
+- `src/retrieve.py` — regulatory passage retrieval
+- `src/compliance.py` — label screening and report generation
+- `src/evaluate.py` — evaluation utilities
+- `tests/test_compliance.py` and `tests/test_retrieval.py` — prototype tests
+
+### Person 2 — Evidence Verification Workflow
+
+A deterministic LangGraph workflow that uses mock regulatory sources to demonstrate claim investigation, citation verification, and escalation for human review.
+
+Features:
+- A Compliance Investigator searches mock regulatory sources.
+- An Evidence Verifier checks citations against retrieved passages.
+- A bounded retry is attempted when evidence is missing.
+- Unverified findings and insufficient evidence are escalated for regulatory review.
+- Structured JSON audit reports record searches, citations, verification explanations, and review outcomes.
+
+Key files:
+- `src/food_label_compliance/agents.py` — workflow agents
+- `src/food_label_compliance/retrieval.py` — retriever interface and mock implementation
+- `src/food_label_compliance/regulation_tools.py` — regulatory retrieval tools
+- `src/food_label_compliance/workflow.py` — review workflow
+- `src/food_label_compliance/__main__.py` — command-line entry point
+- `tests/test_workflow.py` — workflow tests
+
+The Person 2 workflow uses fictional mock regulations for development and testing. These mock passages are not FSSAI requirements and cannot establish legal compliance.
 
 ## Technology Stack
 
-* Python
-* Streamlit
-* FAISS
-* Sentence Transformers
-* LangChain
-* Pytest
-
-## Project Structure
-
-* `src/ingest.py` — document ingestion
-* `src/retrieve.py` — regulatory passage retrieval
-* `src/compliance.py` — label screening and report generation
-* `app.py` — Streamlit interface
-* `tests/` — automated tests
-* `data/raw/` — regulatory PDF documents
-* `data/processed/` — processed documents and search index
-
-## How to Run
-
-Activate the project's virtual environment, then run:
-
-```bash
-python -m streamlit run app.py
-```
-
-Run the tests using:
-
-```bash
-PYTHONPATH=. python -m pytest -q
-```
-
-## Limitations
-
-This is a screening prototype, not a legal compliance determination. Text detection does not establish that a declaration is correct or sufficient. Regulatory applicability, amendments, exceptions and retrieved references require manual verification against current official requirements.
+- Python
+- Streamlit

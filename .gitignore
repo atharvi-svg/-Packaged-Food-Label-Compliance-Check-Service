@@ -1,4 +1,6 @@
+<<<<<<< HEAD
 .venv/
+venv/
 __pycache__/
 *.py[cod]
 .pytest_cache/
@@ -10,3 +12,10 @@ data/raw/*.pdf
 data/processed/index/
 data/processed/*.json
 !data/processed/manifest.json
+
+build/
+dist/
+*.egg-info/
+.coverage
+htmlcov/
+>>>>>>> origin/main

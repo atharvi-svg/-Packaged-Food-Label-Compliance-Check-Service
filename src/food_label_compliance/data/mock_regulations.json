@@ -1,0 +1,30 @@
+{
+  "notice": "Fictional mock rules for software development only; not legal guidance.",
+  "regulations": [
+    {
+      "id": "MOCK-001",
+      "requirement": "Statement of identity is supplied.",
+      "field": "statement_of_identity"
+    },
+    {
+      "id": "MOCK-002",
+      "requirement": "Net quantity is supplied.",
+      "field": "net_quantity"
+    },
+    {
+      "id": "MOCK-003",
+      "requirement": "Ingredients are supplied.",
+      "field": "ingredients"
+    },
+    {
+      "id": "MOCK-004",
+      "requirement": "Allergen declaration is supplied.",
+      "field": "allergen_declaration"
+    },
+    {
+      "id": "MOCK-005",
+      "requirement": "Responsible party information is supplied.",
+      "field": "responsible_party"
+    }
+  ]
+}
